@@ -1,4 +1,1 @@
-start :
-    .\stat_arb\Scripts\activate
-end:
-    deactivate
+function prompt { "$(Split-Path -Leaf (Get-Location))> " }

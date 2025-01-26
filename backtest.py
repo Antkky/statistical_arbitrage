@@ -4,9 +4,11 @@ import random
 import datetime as dt
 import backtrader as bt
 import backtrader.feeds as btfeeds
-from Apexa.strategy import StatArb
+
+from strategy import StatArb
 from Apexa.metrics import calculate_metrics
-from Apexa.monte_carlo import run_monte_carlo, plotMC
+from Apexa.monte_carlo import run_monte_carlo
+
 import json
 import argparse
 
@@ -84,7 +86,7 @@ def pre_process_data():
     print("Data Successfully Processed")
 
 def run_backtest():
-    print("Starting Backtester...")
+    print("___________Backtester___________")
     # Backtester Config
     cerebro = bt.Cerebro()
     cerebro.broker.set_cash(100000)
@@ -124,7 +126,7 @@ def run_backtest():
     print("Metrics Saved, Running Monte Carlo...")
 
     # Run Monte Carlo
-    run_monte_carlo(pnls, iterations=1000, seed=random.randint(0, 100))
+    run_monte_carlo(data=pnls, iterations=1000, seed=random.randint(0, 100))
     cerebro.plot(style='line')
 
 def plot():

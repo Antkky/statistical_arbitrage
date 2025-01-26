@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import csv
 from collections import deque
+from tqdm import tqdm
 
 class StatArb(bt.Strategy):
     def __init__(self, length, rolling_window=20, overbought_level=2.0, oversold_level=-2.0, bb_length=50, bb_multiplier=2.0):
@@ -16,7 +17,7 @@ class StatArb(bt.Strategy):
         self.overbought_level = overbought_level
         self.bb_length = bb_length
         self.bb_multiplier = bb_multiplier
-        self.length = length
+        self.length: int = length
 
     def next(self):
         if not all(d for d in [self.EURUSD, self.EURGBP, self.GBPUSD]):

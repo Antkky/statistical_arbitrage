@@ -1,0 +1,18 @@
+{
+    "Total Trades": 2783,
+    "Net Profit": 634.1072998046875,
+    "Gross Profit": 22267.578125,
+    "Gross Loss": -21633.470703125,
+    "Win Rate": 41.57384117858427,
+    "Risk Reward": 1.44655179977417,
+    "Average Win": 19.245962142944336,
+    "Average Loss": -13.304717063903809,
+    "Average Trade": 0.2278502732515335,
+    "Sharpe Ratio": 0.0072564915753901005,
+    "Sortino Ratio": 0.011598702520132065,
+    "Profit Factor": 1.0293114185333252,
+    "Number of Wins": 1157,
+    "Number of Losses": 1626,
+    "Max Consecutive Wins": 11,
+    "Max Consecutive Losses": 15
+}

@@ -1,0 +1,4 @@
+start :
+    .\stat_arb\Scripts\activate
+end:
+    deactivate

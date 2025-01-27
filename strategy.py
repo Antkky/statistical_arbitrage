@@ -9,7 +9,7 @@ class StatArb(bt.Strategy):
     def __init__(self, length, rolling_window=20, overbought_level=2.0, oversold_level=-2.0, bb_length=50, bb_multiplier=2.0):
         self.trade_log = []
         self.EURUSD = self.getdatabyname('EURUSD')
-        self.EURGBP = self.getdatabyname('EURGBP')
+        self.Ratio = self.getdatabyname('Ratio')
         self.GBPUSD = self.getdatabyname('GBPUSD')
         self.rolling_window = rolling_window
         self.spread = deque(maxlen=rolling_window)
@@ -20,7 +20,7 @@ class StatArb(bt.Strategy):
         self.length: int = length
 
     def next(self):
-        if not all(d for d in [self.EURUSD, self.EURGBP, self.GBPUSD]):
+        if not all(d for d in [self.EURUSD, self.Ratio, self.GBPUSD]):
             return
 
         spread_value = self.EURUSD.close[0] - self.GBPUSD.close[0]
@@ -35,7 +35,7 @@ class StatArb(bt.Strategy):
             return
 
         z_score = (spread_value - rolling_mean) / rolling_std
-        bb_values = self.EURGBP.close.get(size=self.bb_length)
+        bb_values = self.Ratio.close.get(size=self.bb_length)
         if len(bb_values) < self.bb_length:
             return
 
@@ -44,15 +44,15 @@ class StatArb(bt.Strategy):
         bb_upper = bb_mean + (self.bb_multiplier * bb_std)
         bb_lower = bb_mean - (self.bb_multiplier * bb_std)
 
-        if z_score < self.overbought_level and self.EURGBP.close[0] > bb_upper:
+        if z_score < self.overbought_level and self.Ratio.close[0] > bb_upper:
             if self.position:
-                self.close(self.EURGBP)
-            self.sell(self.EURGBP, size=100000)
+                self.close(self.Ratio)
+            self.sell(self.Ratio, size=100000)
 
-        if z_score > self.oversold_level and self.EURGBP.close[0] < bb_lower:
+        if z_score > self.oversold_level and self.Ratio.close[0] < bb_lower:
             if self.position:
-                self.close(self.EURGBP)
-            self.buy(self.EURGBP, size=100000)
+                self.close(self.Ratio)
+            self.buy(self.Ratio, size=100000)
 
     def notify_trade(self, trade):
         if trade.justopened:

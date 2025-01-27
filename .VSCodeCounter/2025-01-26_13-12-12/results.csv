@@ -1,0 +1,17 @@
+"filename", "language", "Python", "JSON", "CSV", "(Read Error)", "comment", "blank", "total"
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\Apexa\metrics.py", "Python", 54, 0, 0, 0, 5, 14, 73
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\Apexa\monte_carlo.py", "Python", 53, 0, 0, 0, 2, 15, 70
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\backtest.py", "Python", 95, 0, 0, 0, 16, 30, 141
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\data\EURUSD.csv", "CSV", 0, 0, 2240332, 0, 0, 0, 2240332
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\data\GBPUSD.csv", "CSV", 0, 0, 2217381, 0, 0, 0, 2217381
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\data\processed\EURGBP.csv", "CSV", 0, 0, 1564219, 0, 0, 1, 1564220
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\data\processed\EURUSD.csv", "CSV", 0, 0, 1564219, 0, 0, 1, 1564220
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\data\processed\GBPUSD.csv", "CSV", 0, 0, 1564219, 0, 0, 1, 1564220
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\research.ipynb", "JSON", 0, 354, 0, 0, 0, 1, 355
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\strategy.py", "Python", 76, 0, 0, 0, 0, 13, 89
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\tests\latest\Montecarlo.csv", "CSV", 0, 0, 2784001, 0, 0, 2784002, 5568003
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\tests\latest\metrics.json", "JSON", 0, 18, 0, 0, 0, 0, 18
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\tests\latest\trades.csv", "CSV", 0, 0, 2785, 0, 0, 1, 2786
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\tests\ver1\Montecarlo.csv", "(Read Error)", 0, 0, 0, 0, 0, 0, 0
+"c:\Users\Antik\OneDrive\Desktop\BLINGBLINGBOY\STAT_ARB\stat_arb\tests\ver1\executed_trades.csv", "CSV", 0, 0, 52913, 0, 0, 1, 52914
+"Total", "-", 278, 372, 11990069, 0, 23, 2784080, 14774822

@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+    ],
+    "settings": {
+        "workbench.editor.enablePreview": true,
+        "breadcrumbs.enabled": false,
+        "workbench.tips.enabled": true,
+        "git.decorations.enabled": false,
+        "problems.decorations.enabled": true,
+        "workbench.editor.enablePreviewFromQuickOpen": false,
+        "terminal.integrated.lineHeight": 1.5,
+        "terminal.integrated.fontSize": 16,
+        "tailwindCSS.experimental.configFile": null,
+        "workbench.activityBar.location": "bottom",
+        "workbench.statusBar.visible": false,
+        "vscode_custom_css.imports": [
+            "https://raw.githubusercontent.com/Antkky/vscode/refs/heads/main/style.css"
+        ]
+    }
+}

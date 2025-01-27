@@ -32,7 +32,8 @@
         "Lib": true,
         "Include": true,
         "pyvenv.cfg": true,
-        "requirements.txt": true
+        "requirements.txt": true,
+        "share": true
     },
 
     "editor.copyWithSyntaxHighlighting": false,

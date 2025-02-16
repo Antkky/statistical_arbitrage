@@ -1,0 +1,8 @@
+{
+  "userIgnoreFilters": [
+    "__pycache__/",
+    "Scripts/",
+    "share/",
+    "Apexa/__pycache__/"
+  ]
+}

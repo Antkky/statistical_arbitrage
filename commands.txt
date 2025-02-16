@@ -1,1 +1,4 @@
 function prompt { "$(Split-Path -Leaf (Get-Location))> " }
+
+
+python eurgbp.py -a EURUSD GBPUSD -m bare

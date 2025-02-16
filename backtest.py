@@ -25,7 +25,7 @@ def run_backtest(symbols: list):
     cerebro = bt.Cerebro()
     cerebro.broker.set_cash(100000)
     cerebro.broker.set_slippage_perc(0.005)
-    fdate = dt.datetime(2024, 11, 1)
+    fdate = dt.datetime(2019, 1, 2)
     tdate = dt.datetime(2025, 1, 1)
     length = 0
 
@@ -55,4 +55,4 @@ def run_backtest(symbols: list):
     cerebro.run()
 
     print("\nBacktest Completed...")
-    cerebro.plot(style='line')
+    cerebro.plot(style='line', stdstats=True)
